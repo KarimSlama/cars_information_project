@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/custom_car_layout_padding"
+    app:cardCornerRadius="@dimen/custom_car_layout_cardCornerRadius"
+    app:cardElevation="@dimen/custom_car_layout_cardElevation"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="@dimen/custom_car_layout_image_layout_width"
+            android:layout_height="@dimen/custom_car_layout_image_layout_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtModel"
+            android:layout_width="@dimen/custom_car_layout_txtModel_layout_width"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_car_"
+            android:drawablePadding="@dimen/custom_car_layout_drawable_padding"
+            android:gravity="center_vertical"
+            android:padding="@dimen/custom_car_layout_padding"
+            android:text="text view"
+            android:textSize="@dimen/custom_car_layout_txtModel_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_car" />
+
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_color"
+            android:drawablePadding="@dimen/custom_car_layout_drawable_padding"
+            android:gravity="center_vertical"
+            android:padding="@dimen/custom_car_layout_padding"
+            android:text="TextView"
+            android:textSize="@dimen/custom_car_layout_txtColor_txtDpl_textSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtModel" />
+
+        <TextView
+            android:id="@+id/txtDpl"
+            android:layout_width="@dimen/custom_car_layout_txtDpl_layout_width"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_gas_pump"
+            android:drawablePadding="@dimen/custom_car_layout_drawable_padding"
+            android:gravity="center_vertical"
+            android:padding="@dimen/custom_car_layout_padding"
+            android:text="TextView"
+            android:textSize="@dimen/custom_car_layout_txtColor_txtDpl_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txtColor"
+            app:layout_constraintTop_toBottomOf="@+id/txtModel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

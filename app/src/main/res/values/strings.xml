@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cars Information</string>
+    <string name="edt_color_hint">color</string>
+    <string name="edt_model_hint">model</string>
+    <string name="edt_dpl_hint">distance per liter</string>
+    <string name="edt_description_hint">description</string>
+    <string name="edt_tooltipText">name</string>
+</resources>
